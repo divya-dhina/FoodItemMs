@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.List;
 
-@FeignClient(name = "foodingredientmapping-ms")
+@FeignClient(name = "foodingredientmapping-ms",url="https://foodingredientmappingms.onrender.com")
 public interface FoodIngredientMappingClient {
 
     @GetMapping("/api/food-ingredients/{foodItemId}")
